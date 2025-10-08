@@ -18,3 +18,5 @@ function getCommentsWithCallback(callback) {
         })
         .catch(err => console.error(err));
 }
+getPostsWithCallback(posts=>console.log('Сортированы по длине названия:',posts));
+getPostsWithCallback(comments=>console.log('Сортированы по автору:',comments));
